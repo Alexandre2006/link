@@ -9,7 +9,10 @@
         await supabase.rpc('increment_clicks', { code: data.link.code});
     }
 </script>
-
+<svelte:head>
+<title>{data.link.name}</title>
+<meta name="description" content="{data.link.owner} sent you {data.link.name}" />
+</svelte:head>
 
 
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 px-4">
@@ -46,7 +49,7 @@
 			</svg>
 		</a>
         <!-- Notice of logging -->
-        <div class="text-sm text-center font-small text-gray-500 mt-4">
+        <div class="text-sm text-center font-small text-gray-400 mt-4">
             This link has been opened {data.link.clicks} times
         </div>
     </div>
