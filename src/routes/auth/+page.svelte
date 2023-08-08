@@ -76,7 +76,7 @@
 >
 	<!-- Header -->
 	<div class="flex flex-col items-center justify-center w-full mb-6">
-		<h1 class="mt-4 text-5xl font-['Charmonman'] text-white">link</h1>
+		<img src="/logo.svg" class="w-24" alt="Link Logo" />
 	</div>
 	<!-- Sign in with Email (Passwordless) -->
 	<form

@@ -30,8 +30,8 @@
 	<!-- Navbar -->
 	<nav class="flex flex-row items-center justify-between w-screen px-4 py-4 mx-auto bg-gray-900">
 		<div class="flex flex-row items-center space-x-4 justify-center">
-			<a href="/" class="flex items-center space-x-2 text-xl font-['Charmonman'] text-white ">
-					link
+			<a href="/" class="flex items-center space-x-">
+				<img src="/logo.svg" class="w-12" alt="Link Logo"/>
 			</a>
 		</div>
 		<div class="flex flex-row items-center justify-center space-x-4">
