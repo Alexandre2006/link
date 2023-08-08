@@ -66,6 +66,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Sign In to Link</title>
+	<meta name="description" content="Sign in to Link" />
+</svelte:head>
+
 <div
 	class="flex flex-col items-center justify-center w-full max-w-md p-8 bg-gray-800 rounded-xl shadow-lg"
 >

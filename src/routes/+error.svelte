@@ -2,6 +2,10 @@
 	import { page } from '$app/stores';
 </script>
 
+<svelte:head>
+	<title>{$page.status} - {$page.error?.message}</title>
+	<meta name="description" content="An error occured" />
+</svelte:head>
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 px-4">
 	<div
 		class="flex flex-col items-center  justify-center w-full max-w-md p-8 bg-gray-800 rounded-xl shadow-lg text-white"
