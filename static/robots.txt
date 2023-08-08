@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /$
+Allow: /auth
+Allow: /legal/*
 Disallow: /
