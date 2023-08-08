@@ -6,7 +6,6 @@
 
     // Increment count
     async function incrementCount()  {
-        console.log("RANJ");
         await supabase.rpc('increment_clicks', { code: data.link.code});
     }
 </script>
@@ -19,10 +18,10 @@
 >
 	<!-- Header -->
     <div class="flex flex-col items-center justify-center w-full">
-        <div class="flex flex-row items-center justify-center space-x-2">
-            <div class="text-2xl font-medium text-white"> {data.link.owner} </div>
-            <div class="text-2xl font-extralight text-white"> sent you </div>
-            <div class="text-2xl font-medium text-white"> {data.link.name} </div>
+        <div class="flex flex-col items-center justify-center space-y-1">
+            <div class="text-2xl font-medium text-white">{data.link.owner}</div>
+            <div class="text-2xl font-extralight text-white">sent you</div>
+            <div class="text-2xl font-medium text-white">{data.link.name}</div>
         </div>
         <!-- Button (Take me there!)-->
         <a

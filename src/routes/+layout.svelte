@@ -36,10 +36,6 @@
 		<div class="flex flex-row items-center justify-center space-x-4">
 			<a href="/" class="text-base font-medium text-white hover:text-gray-400"> Home </a>
 			<span class="text-gray-400 text-base">•</span>
-			<a href="/about" class="text-base font-medium text-white hover:text-gray-400"> About </a>
-			<span class="text-gray-400 text-base">•</span>
-			<a href="/support" class="text-base font-medium text-white hover:text-gray-400"> Support </a>
-			<span class="text-gray-400 text-base">•</span>
 			<div class="relative group">
 				<div class="text-base font-medium text-white cursor-pointer">Legal</div>
 				<div
