@@ -3,6 +3,10 @@
     import "../app.css";
     import { invalidate } from '$app/navigation'
     import { onMount } from 'svelte'
+	// Vercel
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+	inject({ mode: dev ? 'development' : 'production' });
   
     export let data
   
