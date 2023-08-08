@@ -22,7 +22,7 @@
 			const response = await supabase.auth.signInWithOtp({
                 email: email,
                 options: {
-                    emailRedirectTo: 'https://link.thinkalex.dev/dashboard',
+                    emailRedirectTo: `${location.origin}/auth/callback`,
                 }})
                 if (response.error != null) {
                     toast.push('Error signing in: ' + response.error.message, {
@@ -46,7 +46,7 @@
             {
                 provider: 'google',
                 options: {
-					redirectTo: 'https://link.thinkalex.dev/auth/callback',
+                    redirectTo: `${location.origin}/auth/callback`,
                     queryParams: {
                         access_type: 'offline',
                         prompt: 'consent'
@@ -60,7 +60,7 @@
 		const response = await supabase.auth.signInWithOAuth({
             provider: 'github',
 			options: {
-				redirectTo: 'https://link.thinkalex.dev/auth/callback'
+				redirectTo: `${location.origin}/auth/callback`,
 			}
         })
 	}

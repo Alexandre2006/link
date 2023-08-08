@@ -2,8 +2,8 @@
 	<slot />
 	<!-- Bottom section -->
 	<div class="flex flex-row items-center justify-center mt-4 text-xs font-medium text-white">
-		<a href="/login">Privacy Policy</a>
+		<a href="/legal/privacy">Privacy Policy</a>
 		<div class="mx-2 text-gray-600">|</div>
-		<a href="/login/confirm">Terms of Service</a>
+		<a href="/login/tos">Terms of Service</a>
 	</div>
 </div>
